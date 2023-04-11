@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <img class="image" src="Ts.webp" alt="Telanga govt logo">
+            <div class="epass"><h1><span class="letterE">e</span>
+                <span class="letterP">P</span>
+                <span class="letterA">A</span>
+                <span class="letterS">S</span>
+                <span class="letterSecond">S</span></h1>
+            <h2>Electronic Payment & Applicaton System of Scholarships</h2>
+        </div>
+        </div>
+        <hr>
+        <div class="knowId"><b>KNOW YOUR APLLICATION NUMBER</b></div>
+        <hr>
+        <div class="row2">
+            <div class="applicationId">
+                <table>
+                    <br> <label for="typeOfScholarship" id="typeOfScholarship"> </label> Status for :
+                       <select id="typeOfScholarship" name="scholarshipForm" form="epassform">
+                      <option value="Postmatrix">POSTMATRIX</option>
+                      <option value="Prematrix">PREMATRIX</option>
+                    </select>
+                    <br> <label for="academicYear" > </label> Accademic Year:
+                        <select id="academicYear" name="academicYear" form="epassform">
+                          <option value="2009-10">2009-10</option>
+                          <option value="2010-11">2010-11</option>
+                          <option value="2011-12">2011-12</option>
+                          <option value="2012-13">2012-13</option>
+                          <option value="2013-14">2013-14</option>
+                          <option value="2014-15">2014-15</option>
+                          <option value="2015-16">2015-16</option>
+                          <option value="2016-17">2016-17</option>
+                          <option value="2017-18">2017-18</option>
+                          <option value="2018-19">2018-19</option>
+                          <option value="2019-20">2019-20</option>
+                          <option value="2020-21">2020-21</option>
+                          <option value="2021-22">2021-22</option>
+                    </select>
+                    <br><label for="sscExamNumber" > SSC Exam Number:</label> 
+                        <input type="tel" id="sscExamNumber">
+                    <br> <label for="sscPassType" > </label> SSC Pass type:
+                        <select id="sscPassType" name="sscPassType" form="epassform">
+                          <option value="SSC Regular">SSC Regular</option>
+                          <option value="SSC Supplementary">SSC Supplementary</option>
+                          <option value="CBSE">CBSE</option>
+                          <option value="ICSE">ICSE</option>
+                          <option value="Other Board">Other Board</option>
+                          <option value="OPEN University">OPEN University</option>
+                          <option value="SSC Open Schools">SSC Open Schools</option>
+                        </select>
+                    <br><label for="yearOfPass" >Year of Pass:</label> 
+                        <input type="year" id="yearOfPass">
+                    <br><label for="dateOfBirth" >Date of Birth:</label> 
+                    <input type="date" id="dateOfBirth">
+                    <br><button id="search" class="search" onclick="submitApplication()">search</button>
+                </table>
+               </div>
+               <p id="paraElement"></p>
+            </div>
+        </div>
+    </form>
+    <script src="form.js" ></script>
+</body>
+</html>
